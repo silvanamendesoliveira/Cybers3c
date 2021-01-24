@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import os, datetime, socket, time, threading
+import os, datetime, socket, time, threading, sys
 
 # pedir o input ao utilizador
 ip = input("Por favor insira um IP válido: ")
@@ -32,6 +32,7 @@ def portScanner(ip, port):
             print("Scan terminado com sucesso.")
         except:
             print("Ocorreu um erro.")
+            sys.exit()
 
 #EXERCÍCIO 2 - THREADS
 
